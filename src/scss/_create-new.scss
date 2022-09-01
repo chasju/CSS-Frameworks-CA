@@ -1,0 +1,65 @@
+.social-media-post-container {
+  width: 70%;
+}
+
+.card {
+  border: none;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  .tab-content {
+    flex-grow: inherit;
+  }
+
+  .card-profile-pic-container {
+    width: 5rem;
+    height: 5rem;
+    border: 8px solid $secondary;
+    border-radius: 50px;
+    background-color: $secondary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    align-self: flex-end;
+
+    .card-profile-pic {
+      height: 120%;
+    }
+  }
+
+  .btn {
+    align-self: flex-end;
+    width: 7rem;
+  }
+
+  .social-media-post {
+    background-color: $secondary;
+
+    &::placeholder {
+      color: $primary;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .social-media-post-container {
+    width: 100%;
+
+    .card-body {
+      align-items: center;
+
+      .social-media-post {
+        height: 3rem;
+      }
+
+      .post-btn {
+        display: none;
+      }
+    }
+  }
+}

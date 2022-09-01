@@ -3,11 +3,130 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>CSS Frameworks CA | Homepage</title>
     <link rel="stylesheet" href="/dist/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <h1>Hello</h1>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-primary" aria-label="Third navbar example">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html"><img src="/icons/icons8-moon-symbol-96.png" alt="logo" class="moon-logo" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/profile.html">Profile</a>
+              </li>
+            </ul>
+            <div class="align-search-profile-icon">
+              <ul class="navbar-nav mb-2 mb-sm-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false"><img src="/icons/icons8-user-96.png" alt="profile dropdown" class="login-icon" /></a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/pages/profile.html">Profile</a></li>
+                    <li><a class="dropdown-item" href="/pages/login.html">Log In</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form role="search">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="col-md-6 gedf-main m-auto mt-5 p-1 social-media-post-container">
+        <div class="card gedf-card">
+          <div class="card-body">
+            <a href="/pages/profile.html"
+              ><div class="card-profile-pic-container">
+                <img src="/images/odayaka-gurei-1X5IcEXjbmM-unsplash.jpg" alt="" class="card-profile-pic" /></div
+            ></a>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="posts" role="tabpanel" aria-labelledby="posts-tab">
+                <div class="form-group">
+                  <textarea class="form-control social-media-post" id="message" rows="3" placeholder="Hey, what's up?"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="btn-toolbar justify-content-between post-btn">
+              <div class="btn-group">
+                <button type="submit" class="btn btn-primary">POST</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card gedf-card mt-5">
+          <h1 class="h1-homepage text-primary">FEED</h1>
+          <div>
+            <div class="card-header">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-between align-items-center feed-profile-pic">
+                  <div class="mr-2">
+                    <img class="rounded-circle" width="50" src="/images/viktor-zhulin-FM97Fst2InM-unsplash.jpg" alt="" />
+                  </div>
+                  <div class="ml-2">
+                    <div class="h5 m-0 text-primary">@Charlie</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body card-body-feed mb-3">
+              <div class="h7 mb-2 text-primary"><i class="fa fa-clock-o"></i>20.08.22 2.45pm</div>
+              <p class="card-text">Oh you know, today I’m just chilling trying to do what I can to make this design really good.</p>
+            </div>
+          </div>
+          <div>
+            <div class="card-header">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-between align-items-center feed-profile-pic">
+                  <div class="mr-2">
+                    <img class="rounded-circle" width="50" src="/images/skyler-anderson-auECyuNUwMs-unsplash.jpg" alt="" />
+                  </div>
+                  <div class="ml-2">
+                    <div class="h5 m-0 text-primary">@Charlie</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body card-body-feed mb-3">
+              <div class="h7 mb-2 text-primary"><i class="fa fa-clock-o"></i>20.08.22 2.45pm</div>
+              <p class="card-text">Just out here making a living.</p>
+            </div>
+          </div>
+          <div>
+            <div class="card-header">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-between align-items-center feed-profile-pic">
+                  <div class="mr-2">
+                    <img class="rounded-circle" width="50" src="/images/caique-nascimento-8832p6MX7vs-unsplash.jpg" alt="" />
+                  </div>
+                  <div class="ml-2">
+                    <div class="h5 m-0 text-primary">@Charlie</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body card-body-feed mb-3">
+              <div class="h7 mb-2 text-primary"><i class="fa fa-clock-o"></i>20.08.22 2.45pm</div>
+              <p class="card-text">What’s up buttercup?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

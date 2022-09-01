@@ -1,3 +1,17 @@
+// Bootstrap Variable overrides
+@import "variables";
+
+// Bootstrap Styles
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Custom styles
+
 body {
-  background-color: rgb(178, 153, 153);
+  font-family: "Montserrat";
 }
+
+@import "nav";
+@import "login";
+@import "create-new";
+@import "feed";
+@import "profile-page";

@@ -1,0 +1,139 @@
+.container {
+  margin-top: 3rem;
+}
+
+.col-2 {
+  text-align: left;
+  margin-top: 7.5rem;
+
+  .card-profile-pic-profile {
+    border: 8px solid $secondary;
+  }
+
+  .profile-info h3 {
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .profile-info p {
+    margin-bottom: 0.2rem;
+  }
+}
+
+.col-5 {
+  margin-top: 7.5rem;
+
+  .social-media-post {
+    background-color: $secondary;
+    height: 8rem;
+
+    &::placeholder {
+      color: $primary;
+    }
+  }
+
+  .post-btn {
+    justify-content: flex-end;
+
+    .btn {
+      width: 7rem;
+    }
+  }
+
+  .friend-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+
+    h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      text-align: right;
+    }
+
+    .friend-section {
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: 25px;
+
+      .friend img {
+        border-radius: 1.5rem;
+      }
+    }
+  }
+}
+
+.col-4 {
+  .card {
+    text-align: left;
+
+    .h1-profile-page {
+      padding: unset;
+    }
+
+    .card-body-profile-page {
+      margin-left: 2rem;
+      margin-right: unset;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 400px;
+
+    .row {
+      flex-direction: column;
+
+      .col-2,
+      .col-4,
+      .col-5 {
+        width: 100%;
+      }
+
+      .col-2 {
+        display: flex;
+        gap: 10px;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: unset;
+      }
+
+      .col-5 {
+        margin-top: 2.5rem;
+
+        .social-media-post {
+          height: 3rem;
+        }
+
+        .friend-container {
+          margin-left: unset;
+        }
+
+        .friend-section {
+          margin-bottom: 2rem;
+        }
+      }
+
+      .col-4 {
+        margin-top: 2rem;
+        h1 {
+          align-self: flex-end;
+        }
+
+        .card-body-profile-page,
+        .feed-profile-pic {
+          margin-left: unset;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}

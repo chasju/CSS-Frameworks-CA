@@ -10904,5 +10904,119 @@ body {
     margin-right: unset;
   }
 }
+.container {
+  margin-top: 3rem;
+}
+
+.col-2 {
+  text-align: left;
+  margin-top: 7.5rem;
+}
+.col-2 .card-profile-pic-profile {
+  border: 8px solid rgba(86, 15, 108, 0.4);
+}
+.col-2 .profile-info h3, .col-2 .profile-info .h3 {
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+.col-2 .profile-info p {
+  margin-bottom: 0.2rem;
+}
+
+.col-5 {
+  margin-top: 7.5rem;
+}
+.col-5 .social-media-post {
+  background-color: rgba(86, 15, 108, 0.4);
+  height: 8rem;
+}
+.col-5 .social-media-post::placeholder {
+  color: #560f6c;
+}
+.col-5 .post-btn {
+  justify-content: flex-end;
+}
+.col-5 .post-btn .btn {
+  width: 7rem;
+}
+.col-5 .friend-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+.col-5 .friend-container h2, .col-5 .friend-container .h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: right;
+}
+.col-5 .friend-container .friend-section {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.col-5 .friend-container .friend-section .friend img {
+  border-radius: 1.5rem;
+}
+
+.col-4 .card {
+  text-align: left;
+}
+.col-4 .card .h1-profile-page {
+  padding: unset;
+}
+.col-4 .card .card-body-profile-page {
+  margin-left: 2rem;
+  margin-right: unset;
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 400px;
+  }
+  .container .row {
+    flex-direction: column;
+  }
+  .container .row .col-2,
+.container .row .col-4,
+.container .row .col-5 {
+    width: 100%;
+  }
+  .container .row .col-2 {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: unset;
+  }
+  .container .row .col-5 {
+    margin-top: 2.5rem;
+  }
+  .container .row .col-5 .social-media-post {
+    height: 3rem;
+  }
+  .container .row .col-5 .friend-container {
+    margin-left: unset;
+  }
+  .container .row .col-5 .friend-section {
+    margin-bottom: 2rem;
+  }
+  .container .row .col-4 {
+    margin-top: 2rem;
+  }
+  .container .row .col-4 h1, .container .row .col-4 .h1 {
+    align-self: flex-end;
+  }
+  .container .row .col-4 .card-body-profile-page,
+.container .row .col-4 .feed-profile-pic {
+    margin-left: unset;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     <title>CSS Frameworks CA | Profile page</title>
     <link rel="stylesheet" href="/dist/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
     <header>
@@ -43,113 +41,123 @@
       </nav>
     </header>
     <main>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-2">
-            <div class="card-profile-pic-container mb-4">
-              <img src="/images/odayaka-gurei-1X5IcEXjbmM-unsplash.jpg" width="100px" alt="" class="card-profile-pic rounded-circle card-profile-pic-profile" />
-            </div>
-            <div class="profile-info">
-              <h3 class="text-primary mb-4">Matilda</h3>
-              <p class="text-primary">Single</p>
-              <p class="text-primary">Supahstar</p>
-              <p class="text-primary">Manchester</p>
+      <!---------------BIO---------------->
+      <div class="container">
+        <div class="row mt-5 justify-content-sm-between">
+          <div class="col-sm-4 col-md-2 d-flex align-items-end align-items-sm-start align-content-sm-start gap-4 gap-sm-5 flex-wrap">
+            <div class="row flex-sm-column">
+              <div class="col mb-4 mt-5">
+                <img src="/images/odayaka-gurei-1X5IcEXjbmM-unsplash.jpg" alt="" class="img-fluid border border-secondary border-5 rounded-circle card-profile-pic-profile" style="--bs-border-opacity: 0.4" />
+              </div>
+              <div class="col text-start align-self-end">
+                <h3 class="text-primary fs-4 fw-bold mb-3">Matilda</h3>
+                <p class="text-primary fw-light mb-0">Single</p>
+                <p class="text-primary fw-light mb-0">Supahstar</p>
+                <p class="text-primary fw-light mb-0">Manchester</p>
+              </div>
             </div>
           </div>
-          <div class="col-5">
+          <!-------------- WRITE NEW POST & FRIENDS----------------->
+          <div class="col-sm-8 col-md-5">
             <div class="tab-content" id="myTabContent">
               <div class="tab-pane fade show active" id="posts" role="tabpanel" aria-labelledby="posts-tab">
-                <div class="form-group">
-                  <textarea class="form-control social-media-post mb-2" id="message" rows="3" placeholder="Hey, what's up?"></textarea>
+                <div class="form-group mt-5">
+                  <textarea class="form-control social-media-post bg-secondary text-primary" style="--bs-bg-opacity: 0.4" id="message" rows="3" placeholder="Hey, what's up?"></textarea>
                 </div>
               </div>
             </div>
-            <div class="btn-toolbar post-btn mb-5">
+            <div class="btn-toolbar post-btn mt-1 mb-5 justify-content-end">
               <div class="btn-group">
-                <button type="submit" class="btn btn-primary">POST</button>
+                <button type="submit" class="btn btn-primary pe-4 ps-4">POST</button>
               </div>
             </div>
-            <div class="friend-container">
-              <div>
-                <h2 class="text-primary">FRIENDS</h2>
+            <div class="friend-container pt-md-5">
+              <div class="text-end mb-4">
+                <h2 class="text-primary fw-bold">FRIENDS</h2>
               </div>
-              <div class="friend-section">
+              <div class="friend-section mb-4 d-flex justify-content-around flex-wrap gap-2">
                 <div class="friend">
-                  <a href=""><img src="/images/viktor-zhulin-FM97Fst2InM-unsplash.jpg" alt="" width="70px" /></a>
+                  <a href=""><img src="/images/viktor-zhulin-FM97Fst2InM-unsplash.jpg" alt="" width="100px" class="rounded-5" /></a>
                 </div>
                 <div class="friend">
-                  <a href=""><img src="/images/skyler-anderson-auECyuNUwMs-unsplash.jpg" alt="" width="70px" /></a>
+                  <a href=""><img src="/images/skyler-anderson-auECyuNUwMs-unsplash.jpg" alt="" width="100px" class="rounded-5" /></a>
                 </div>
                 <div class="friend">
-                  <a href=""><img src="/images/caique-nascimento-8832p6MX7vs-unsplash.jpg" alt="" width="70px" /></a>
+                  <a href=""><img src="/images/caique-nascimento-8832p6MX7vs-unsplash.jpg" alt="" width="100px" class="rounded-5" /></a>
                 </div>
                 <div class="friend">
-                  <a href=""><img src="/images/viktor-zhulin-FM97Fst2InM-unsplash.jpg" alt="" width="70px" /></a>
+                  <a href=""><img src="/images/viktor-zhulin-FM97Fst2InM-unsplash.jpg" alt="" width="100px" class="rounded-5" /></a>
                 </div>
                 <div class="friend">
-                  <a href=""><img src="/images/skyler-anderson-auECyuNUwMs-unsplash.jpg" alt="" width="70px" /></a>
+                  <a href=""><img src="/images/skyler-anderson-auECyuNUwMs-unsplash.jpg" alt="" width="100px" class="rounded-5" /></a>
                 </div>
                 <div class="friend">
-                  <a href=""><img src="/images/caique-nascimento-8832p6MX7vs-unsplash.jpg" alt="" width="70px" /></a>
+                  <a href=""><img src="/images/caique-nascimento-8832p6MX7vs-unsplash.jpg" alt="" width="100px" class="rounded-5" /></a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-4">
-            <div class="card gedf-card">
-              <h1 class="h1-homepage text-primary h1-profile-page mb-4">FEED</h1>
-              <div>
-                <div class="card-header">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="d-flex justify-content-between align-items-center feed-profile-pic">
-                      <div class="mr-2">
-                        <img class="rounded-circle" width="50" src="/images/odayaka-gurei-1X5IcEXjbmM-unsplash.jpg" alt="" />
-                      </div>
-                      <div class="ml-2">
-                        <div class="h5 m-0 text-primary">@Charlie</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body card-body-feed card-body-profile-page mb-3 mt-2">
-                  <div class="h7 mb-2 text-primary"><i class="fa fa-clock-o"></i>20.08.22 2.45pm</div>
-                  <p class="card-text">Lorem Ipsum.</p>
-                </div>
-              </div>
-              <div>
-                <div class="card-header">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="d-flex justify-content-between align-items-center feed-profile-pic">
-                      <div class="mr-2">
-                        <img class="rounded-circle" width="50" src="/images/odayaka-gurei-1X5IcEXjbmM-unsplash.jpg" alt="" />
-                      </div>
-                      <div class="ml-2">
-                        <div class="h5 m-0 text-primary">@Charlie</div>
+          <!--------------FEED---------------->
+          <div class="col-md-5">
+            <div class="feed-container mt-5 ms-2 me-2">
+              <h1 class="h1-homepage text-primary text-start fw-bold">FEED</h1>
+              <div class="card gedf-card gap-3 border-0">
+                <div class="row bg-primary rounded-1 gap-3 pt-3 pb-3 mb-4" style="--bs-bg-opacity: 0.1">
+                  <div class="col-2 border-0">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="d-flex feed-profile-pic">
+                        <div class="mr-2">
+                          <img class="rounded-circle" width="50" src="/images/viktor-zhulin-FM97Fst2InM-unsplash.jpg" alt="" />
+                        </div>
                       </div>
                     </div>
                   </div>
+                  <div class="card-body mb-3 col-9 p-0">
+                    <div class="ml-2 mb-1 d-flex flex-md-column gap-3 gap-md-0">
+                      <div class="h7 text-primary fs-6">@Charlie</div>
+                      <p class="text-primary d-md-none">|</p>
+                      <div class="h7 text-primary mb-md-3">20.08.22 2.45pm</div>
+                    </div>
+                    <p class="card-text pe-3">Oh you know, today I’m just chilling trying to do what I can to make this design really good.</p>
+                  </div>
                 </div>
-                <div class="card-body card-body-feed card-body-profile-page mb-3 mt-2">
-                  <div class="h7 mb-2 text-primary"><i class="fa fa-clock-o"></i>20.08.22 2.45pm</div>
-                  <p class="card-text">Lorem Ipsum.</p>
-                </div>
-              </div>
-              <div>
-                <div class="card-header">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="d-flex justify-content-between align-items-center feed-profile-pic">
-                      <div class="mr-2">
-                        <img class="rounded-circle" width="50" src="/images/odayaka-gurei-1X5IcEXjbmM-unsplash.jpg" alt="" />
-                      </div>
-                      <div class="ml-2">
-                        <div class="h5 m-0 text-primary">@Charlie</div>
+                <div class="row bg-primary rounded-1 gap-3 pt-3 pb-3 mb-4" style="--bs-bg-opacity: 0.1">
+                  <div class="col-2 border-0">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="d-flex feed-profile-pic">
+                        <div class="mr-2">
+                          <img class="rounded-circle" width="50" src="/images/viktor-zhulin-FM97Fst2InM-unsplash.jpg" alt="" />
+                        </div>
                       </div>
                     </div>
                   </div>
+                  <div class="card-body mb-3 col-9 p-0">
+                    <div class="ml-2 mb-1 d-flex flex-md-column gap-3 gap-md-0">
+                      <div class="h7 text-primary fs-6">@Charlie</div>
+                      <p class="text-primary d-md-none">|</p>
+                      <div class="h7 text-primary mb-md-3">20.08.22 2.45pm</div>
+                    </div>
+                    <p class="card-text pe-3">Oh you know, today I’m just chilling trying to do what I can to make this design really good.</p>
+                  </div>
                 </div>
-                <div class="card-body card-body-feed card-body-profile-page mb-3 mt-2">
-                  <div class="h7 mb-2 text-primary"><i class="fa fa-clock-o"></i>20.08.22 2.45pm</div>
-                  <p class="card-text">Lorem Ipsum?</p>
+                <div class="row bg-primary rounded-1 gap-3 pt-3 pb-3 mb-4" style="--bs-bg-opacity: 0.1">
+                  <div class="col-2 border-0">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="d-flex feed-profile-pic">
+                        <div class="mr-2">
+                          <img class="rounded-circle" width="50" src="/images/viktor-zhulin-FM97Fst2InM-unsplash.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body mb-3 col-9 p-0">
+                    <div class="ml-2 mb-1 d-flex flex-md-column gap-3 gap-md-0">
+                      <div class="h7 text-primary fs-6">@Charlie</div>
+                      <p class="text-primary d-md-none">|</p>
+                      <div class="h7 text-primary mb-md-3">20.08.22 2.45pm</div>
+                    </div>
+                    <p class="card-text pe-3">Oh you know, today I’m just chilling trying to do what I can to make this design really good.</p>
+                  </div>
                 </div>
               </div>
             </div>

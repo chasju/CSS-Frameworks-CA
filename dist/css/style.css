@@ -10758,37 +10758,9 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.h1-homepage {
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 0.3rem;
-  margin-left: 2rem;
-  padding-bottom: 1rem;
-}
-
-.card-header {
-  background-color: unset;
-  border-bottom: unset;
-  padding: unset;
-}
-.card-header .feed-profile-pic {
-  gap: 25px;
-  margin-left: 2rem;
-}
-
-.card-body-feed {
-  flex-direction: column;
-  background-color: rgba(86, 15, 108, 0.2);
-  border-radius: 10px;
-  margin-left: 7rem;
-  margin-right: 9.5rem;
-  padding-bottom: 3rem;
-}
-
-@media (max-width: 767px) {
-  .card-body-feed {
-    align-items: flex-start !important;
-    margin-right: unset;
+@media (max-width: 575px) {
+  .form-group textarea {
+    height: 3.5rem;
   }
 }
 

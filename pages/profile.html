@@ -8,35 +8,32 @@
     <link rel="stylesheet" href="/dist/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-sm navbar-dark bg-primary" aria-label="Third navbar example">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/index.html"><img src="/icons/icons8-moon-symbol-96.png" alt="logo" class="moon-logo" /></a>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-primary rounded-bottom" aria-label="Third navbar example">
+        <div class="container">
+          <a class="navbar-brand mt-1 me-5" href="/index.html"><img src="/icons/icons8-moon-symbol-96.png" alt="logo" style="width: 40px" /></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarsExample03">
-            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-              <li class="nav-item">
+            <ul class="navbar-nav me-auto mb-sm-0 d-flex flex-grow-1 gap-5">
+              <li class="nav-item d-flex justify-content-center align-items-center">
                 <a class="nav-link" aria-current="page" href="/index.html">Home</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item d-flex justify-content-center align-items-center">
                 <a class="nav-link active" href="/pages/profile.html">Profile</a>
+              </li>
+              <li class="nav-item dropdown ms-auto pe-lg-3">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false"><img src="/icons/icons8-user-96.png" alt="profile dropdown" class="login-icon" style="height: 30px" /></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/pages/profile.html">Profile</a></li>
+                  <li><a class="dropdown-item" href="/pages/login.html">Log In</a></li>
+                </ul>
               </li>
             </ul>
             <div class="align-search-profile-icon">
-              <ul class="navbar-nav mb-2 mb-sm-0">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false"><img src="/icons/icons8-user-96.png" alt="profile dropdown" class="login-icon" /></a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/pages/profile.html">Profile</a></li>
-                    <li><a class="dropdown-item" href="/pages/login.html">Log In</a></li>
-                  </ul>
-                </li>
-              </ul>
               <form role="search">
                 <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
               </form>
